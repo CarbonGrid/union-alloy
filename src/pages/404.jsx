@@ -7,7 +7,7 @@ import { Layout, Container } from 'layouts';
 
 const ErrorPage = center => (
   <Layout>
-    <Helmet title={'404'} />
+    <Helmet title={'404 | Union Alloy (Pte) Ltd'} />
     <Header title="404" />
     <Container center={center}>
       <h1>Woops, something went wrong.</h1>
