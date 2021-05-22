@@ -86,6 +86,7 @@ const Title = styled.h1`
   margin: 0;
 `;
 
+//<Date>{date}</Date>
 const BlogList = ({ path, cover, title, date, excerpt, tags }) => (
   <Container>
     <Wrapper>
@@ -95,7 +96,7 @@ const BlogList = ({ path, cover, title, date, excerpt, tags }) => (
         </Link>
       </Image>
       <Information>
-        <Date>{date}</Date>
+        
         <Link to={path}>
           <Title>{title}</Title>
         </Link>
@@ -108,11 +109,12 @@ const BlogList = ({ path, cover, title, date, excerpt, tags }) => (
 
 export default BlogList;
 
+
+//date: PropTypes.string.isRequired,
 BlogList.propTypes = {
   cover: PropTypes.object.isRequired,
   path: PropTypes.string.isRequired,
   excerpt: PropTypes.string,
-  date: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   tags: PropTypes.array.isRequired,
 };

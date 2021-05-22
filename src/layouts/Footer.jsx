@@ -25,9 +25,17 @@ const Footer = () => (
   <Wrapper>
     <Text>
       <span>
-        Gatsby Tutorial Starter -{' '}
-        <a href="https://justinformentin.com">Justin Formentin</a>
+        <a href="/">Home</a> | 
+        <a href="/about">About Us</a> | 
+        <a href="/about">Products & Services</a> | 
+        <a href="/awards">Awards & Quality</a> | 
+        <a href="/partners">Partners</a> | 
+        <a href="/contact">Contact Us</a> | 
+        <a href="/privacy">Privacy</a>
       </span>
+    </Text>
+    <Text>
+    © 2021 Union Alloy (Pte) Ltd. All rights reserved.
     </Text>
   </Wrapper>
 );
