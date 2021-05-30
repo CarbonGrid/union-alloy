@@ -15,11 +15,11 @@ const Nav = styled.nav`
   justify-content: flex-end;
   font-family: ${props => props.theme.fontFamily.body};
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1rem;
   align-items: center;
   a {
     color: ${props => props.theme.colors.white.base};
-    margin-left: 2rem;
+    margin-left: 1rem;
     transition: all ${props => props.theme.transitions.default.duration};
     &:hover {
       color: ${props => props.theme.colors.white.grey};
@@ -34,7 +34,7 @@ const NavBar = () => (
     </StyledLink>
     <Nav>
       <Link to="/">Home</Link>
-      <Link to="/blog">Blog</Link>
+      <Link to="/contact">Contact</Link>
       <Link to="/about">About</Link>
     </Nav>
   </Headroom>

@@ -57,16 +57,6 @@ const Wrapper = styled.div`
       }
     }
   }
-  img[src*='#left'] {
-    float: left;
-  }
-  img[src*='#right'] {
-    float: right;
-  }
-  img[src*='#center'] {
-    display: block;
-    margin: auto;
-  }
 `;
 
 const Content = ({ input }) => (

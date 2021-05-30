@@ -6,7 +6,7 @@ title: "Fiberglass Piping Systems"
 published: true
 tags: ['NOV', 'Fibreglass', 'Piping Systems']
 ---
-**UNION ALLOY PTE LTD** has been partnering NOV Fiber Glass Systems (NOV FGS) for 20 years servicing the industrial, onshore and offshore market in the region.
+**UNION ALLOY PTE LTD** has been partnering NOV Fiber Glass Systems (NOV FGS) for 25 years servicing the industrial, onshore and offshore market in the region.
 
 *****
 
@@ -59,6 +59,8 @@ tags: ['NOV', 'Fibreglass', 'Piping Systems']
     - Sewerage
     - Caissons / column piping
 
-**We also offer a very comprehensive selection of adhesive-bonded, threaded and mechanical joining systems for Glassfiber Reinforced Epoxy (GRE).**
+![](/img/pic2.jpg#center "")
 
-![We also offer a very comprehensive selection of adhesive-bonded, threaded and mechanical joining systems for Glassfiber Reinforced Epoxy (GRE).](/img/fgs3-large.jpg "")
+![](/img/pic4.jpg#center "")
+
+![](/img/P1040076.jpg#center "")

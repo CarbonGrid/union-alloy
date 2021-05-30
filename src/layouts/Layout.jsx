@@ -53,7 +53,16 @@ const Layout = ({ children }) => (
           h1 {
             font-family: ${theme.fontFamily.heading};
           }
-
+          img[src*='#left'] {
+            float: left;
+          }
+          img[src*='#right'] {
+            float: right;
+          }
+          img[src*='#center'] {
+            display: block;
+            margin: auto;
+          }
           ${headroom}
         `}
       />
