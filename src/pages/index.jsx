@@ -5,6 +5,7 @@ import Helmet from 'react-helmet';
 import styled from '@emotion/styled';
 import { Header, PostList } from 'components';
 import { Layout } from 'layouts';
+import Img from 'gatsby-image';
 
 const PostWrapper = styled.div`
   display: flex;
@@ -28,8 +29,16 @@ const Index = ({ data }) => {
       <Header cover={data.headerBackground.childImageSharp.fluid}></Header>
       <PostWrapper>
         {edges.map(({ node }) => {
-          const { id, excerpt, frontmatter } = node;
-          const { cover, path, title, date } = frontmatter;
+          let { id, excerpt, frontmatter } = node;
+          let { cover, path, title, date } = frontmatter;
+          if (title == "Fibreglass Gratings"){
+            title = "Fibreglass";
+            const nbsp = '\u00A0';
+            const breakline = '\u000A';
+            excerpt = ["Gratings", "Handrail System", "Structure"].join(breakline);
+          } else if (title == "Strainers") {
+            excerpt = <Img fluid={data.mueller.childImageSharp.fluid}></Img>;
+          }
           return (
             <PostList
               key={id}
@@ -84,8 +93,14 @@ export const query = graphql`
         ) {
           ...GatsbyImageSharpFluid_withWebp
         }
-        resize(width: 1280, quality: 100) {
-          src
+      }
+    }
+    mueller: file(relativePath: { eq: "mueller.png" }) {
+      childImageSharp {
+        fluid(
+          quality: 100
+        ) {
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }

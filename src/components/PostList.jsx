@@ -112,9 +112,9 @@ const PostList = ({ cover, path, date, title, excerpt }) => (
       <Img fluid={cover} />
     </Image>
     <StyledLink to={path}>
-      <Info>
+      <Info style={{width: '85%'}}>
         <Title>{title}</Title>
-        <span>{excerpt}</span>
+        <span style={{ whiteSpace: 'pre-wrap'}}>{excerpt}</span>
       </Info>
     </StyledLink>
   </Wrapper>
@@ -126,6 +126,6 @@ export default PostList;
 PostList.propTypes = {
   cover: PropTypes.object.isRequired,
   path: PropTypes.string.isRequired,
-  excerpt: PropTypes.string,
+  excerpt: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
   title: PropTypes.string.isRequired,
 };
