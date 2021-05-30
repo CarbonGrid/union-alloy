@@ -19,13 +19,13 @@ const PostWrapper = styled.div`
     margin: 4rem 1rem 1rem 1rem;
   }
 `;
-
+//<Header title="Union Alloy">Specialists in Fiberglass Piping System for Offshore, Marine, Industrial & Chemical</Header>
 const Index = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
     <Layout>
       <Helmet title={'Homepage | Union Alloy (Pte) Ltd'} />
-      <Header title="Union Alloy">Specialists in Fiberglass Piping System for Offshore, Marine, Industrial & Chemical</Header>
+      <Header cover={data.headerBackground.childImageSharp.fluid}></Header>
       <PostWrapper>
         {edges.map(({ node }) => {
           const { id, excerpt, frontmatter } = node;
@@ -42,6 +42,9 @@ const Index = ({ data }) => {
           );
         })}
       </PostWrapper>
+      <img src="/img/iso-logo.png#center"></img>
+      <img src="/img/bizsafe-star-logo.jpg#center"></img>
+      <img src="/img/iso-45001-2018.jpg#center"></img>
     </Layout>
   );
 };
@@ -71,6 +74,21 @@ Index.propTypes = {
 
 export const query = graphql`
   query {
+    headerBackground: file(relativePath: { eq: "pic1.png" }) {
+      childImageSharp {
+        fluid(
+          maxHeight: 1280
+          maxWidth: 1920
+          quality: 100
+          duotone: { highlight: "#386eee", shadow: "#2323be", opacity: 10 }
+        ) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+        resize(width: 1280, quality: 100) {
+          src
+        }
+      }
+    }
     allMarkdownRemark(
       limit: 6
       sort: { order: DESC, fields: [frontmatter___date] }
@@ -88,7 +106,7 @@ export const query = graphql`
               childImageSharp {
                 fluid(
                   maxWidth: 1000
-                  quality: 90
+                  quality: 100
                   traceSVG: { color: "#2B2B2F" }
                 ) {
                   ...GatsbyImageSharpFluid_withWebp_tracedSVG
