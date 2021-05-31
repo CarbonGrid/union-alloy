@@ -51,9 +51,9 @@ const Index = ({ data }) => {
           );
         })}
       </PostWrapper>
-      <img src="/img/iso-logo.png#center"></img>
-      <img src="/img/bizsafe-star-logo.jpg#center"></img>
-      <img src="/img/iso-45001-2018.jpg#center"></img>
+      <img src="/img/iso-logo.png#center" alt="iso-9001-2015"></img>
+      <img src="/img/bizsafe-star-logo.jpg#center" alt="bizsafe-star"></img>
+      <img src="/img/iso-45001-2018.jpg#center" alt="iso-45001-2018"></img>
     </Layout>
   );
 };
@@ -88,7 +88,7 @@ export const query = graphql`
         fluid(
           maxHeight: 1280
           maxWidth: 1920
-          quality: 100
+          quality: 90
           duotone: { highlight: "#386eee", shadow: "#2323be", opacity: 10 }
         ) {
           ...GatsbyImageSharpFluid_withWebp
@@ -98,7 +98,7 @@ export const query = graphql`
     mueller: file(relativePath: { eq: "mueller.png" }) {
       childImageSharp {
         fluid(
-          quality: 100
+          quality: 90
         ) {
           ...GatsbyImageSharpFluid_withWebp
         }
@@ -121,7 +121,7 @@ export const query = graphql`
               childImageSharp {
                 fluid(
                   maxWidth: 1000
-                  quality: 100
+                  quality: 90
                   traceSVG: { color: "#2B2B2F" }
                 ) {
                   ...GatsbyImageSharpFluid_withWebp_tracedSVG

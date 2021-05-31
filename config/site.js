@@ -6,11 +6,11 @@ module.exports = {
   url: 'https://www.unionalloy.com.sg', // Domain of your site. No trailing slash!
   siteUrl: 'https://www.unionalloy.com.sg', // url + pathPrefix
   siteLanguage: 'en', // Language Tag on <html> element
-  logo: 'static/logo/logo.png', // Used for SEO
-  banner: 'static/logo/banner.png',
+  logo: 'static/logo/logo-icon.jpg', // Used for SEO
+  banner: 'static/logo/logo-icon.jpg',
   // JSONLD / Manifest
   favicon: 'static/logo/favicon.png', // Used for manifest favicon generation
-  shortName: 'GatsbyTut', // shortname for manifest. MUST be shorter than 12 characters
+  shortName: 'UnionAlloy', // shortname for manifest. MUST be shorter than 12 characters
   author: 'CarbonGrid', // Author for schemaORGJSONLD
   themeColor: '#3e7bf2',
   backgroundColor: '#d3e0ff',
