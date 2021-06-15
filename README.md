@@ -110,16 +110,6 @@
 
 ```bash
 Download project
-# With `gatsby-cli`
-gatsby new my-site https://github.com/justinformentin/gatsby-v2-tutorial-starter
-
-OR
-
-# Cloning
-git clone my-site https://github.com/justinformentin/gatsby-v2-tutorial-starter.git
-cd my-site
-
-THEN
 
 # Install dependencies
 npm i
